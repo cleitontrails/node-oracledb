@@ -1,6 +1,6 @@
 # node-oracledb Documentation for the Oracle Database Node.js Add-on
 
-*Copyright (c) 2015, 2023, Oracle and/or its affiliates.*
+*Copyright (c) 2015, 2026, Oracle and/or its affiliates.*
 
 This software is dual-licensed to you under the Universal Permissive License
 (UPL) 1.0 as shown at https://oss.oracle.com/licenses/upl and Apache License
@@ -176,103 +176,99 @@ For installation information, see the [Node-oracledb Installation Instructions](
 
 [View latest documentation](https://node-oracledb.readthedocs.io/en/latest/api_manual/oracledb.html#oracledb.events)
 
-#### <a name="propdbextendedmetadata"></a> 3.2.7 `oracledb.extendedMetaData`
-
-[View latest documentation](https://node-oracledb.readthedocs.io/en/latest/api_manual/oracledb.html#oracledb.extendedMetaData)
-
-#### <a name="propdbisexternalauth"></a> 3.2.8 `oracledb.externalAuth`
+#### <a name="propdbisexternalauth"></a> 3.2.7 `oracledb.externalAuth`
 
 [View latest documentation](https://node-oracledb.readthedocs.io/en/latest/api_manual/oracledb.html#oracledb.externalAuth)
 
-#### <a name="propdbfetcharraysize"></a> 3.2.9 `oracledb.fetchArraySize`
+#### <a name="propdbfetcharraysize"></a> 3.2.8 `oracledb.fetchArraySize`
 
 [View latest documentation](https://node-oracledb.readthedocs.io/en/latest/api_manual/oracledb.html#oracledb.fetchArraySize)
 
-#### <a name="propdbfetchasbuffer"></a> 3.2.10 `oracledb.fetchAsBuffer`
+#### <a name="propdbfetchasbuffer"></a> 3.2.9 `oracledb.fetchAsBuffer`
 
 [View latest documentation](https://node-oracledb.readthedocs.io/en/latest/api_manual/oracledb.html#oracledb.fetchAsBuffer)
 
-#### <a name="propdbfetchasstring"></a> 3.2.11 `oracledb.fetchAsString`
+#### <a name="propdbfetchasstring"></a> 3.2.10 `oracledb.fetchAsString`
 
 [View latest documentation](https://node-oracledb.readthedocs.io/en/latest/api_manual/oracledb.html#oracledb.fetchAsString)
 
-#### <a name="propdblobprefetchsize"></a> 3.2.12 `oracledb.lobPrefetchSize`
+#### <a name="propdblobprefetchsize"></a> 3.2.11 `oracledb.lobPrefetchSize`
 
 [View latest documentation](https://node-oracledb.readthedocs.io/en/latest/api_manual/oracledb.html#oracledb.lobPrefetchSize)
 
-#### <a name="propdbmaxrows"></a> 3.2.13 `oracledb.maxRows`
+#### <a name="propdbmaxrows"></a> 3.2.12 `oracledb.maxRows`
 
 [View latest documentation](https://node-oracledb.readthedocs.io/en/latest/api_manual/oracledb.html#oracledb.maxRows)
 
-#### <a name="propdboracleclientversion"></a> 3.2.14 `oracledb.oracleClientVersion`
+#### <a name="propdboracleclientversion"></a> 3.2.13 `oracledb.oracleClientVersion`
 
 [View latest documentation](https://node-oracledb.readthedocs.io/en/latest/api_manual/oracledb.html#oracledb.oracleClientVersion)
 
-#### <a name="propdboracleclientversionstring"></a> 3.2.15 `oracledb.oracleClientVersionString`
+#### <a name="propdboracleclientversionstring"></a> 3.2.14 `oracledb.oracleClientVersionString`
 
 [View latest documentation](https://node-oracledb.readthedocs.io/en/latest/api_manual/oracledb.html#oracledb.oracleClientVersionString)
 
-#### <a name="propdboutformat"></a> 3.2.16 `oracledb.outFormat`
+#### <a name="propdboutformat"></a> 3.2.15 `oracledb.outFormat`
 
 [View latest documentation](https://node-oracledb.readthedocs.io/en/latest/api_manual/oracledb.html#oracledb.outFormat)
 
-#### <a name="propdbpoolincrement"></a> 3.2.17 `oracledb.poolIncrement`
+#### <a name="propdbpoolincrement"></a> 3.2.16 `oracledb.poolIncrement`
 
 [View latest documentation](https://node-oracledb.readthedocs.io/en/latest/api_manual/oracledb.html#oracledb.poolIncrement)
 
-#### <a name="propdbpoolmax"></a> 3.2.18 `oracledb.poolMax`
+#### <a name="propdbpoolmax"></a> 3.2.17 `oracledb.poolMax`
 
 [View latest documentation](https://node-oracledb.readthedocs.io/en/latest/api_manual/oracledb.html#oracledb.poolMax)
 
-#### <a name="propdbpoolmaxpershard"></a> 3.2.19 `oracledb.poolMaxPerShard`
+#### <a name="propdbpoolmaxpershard"></a> 3.2.18 `oracledb.poolMaxPerShard`
 
 [View latest documentation](https://node-oracledb.readthedocs.io/en/latest/api_manual/oracledb.html#oracledb.poolMaxPerShard)
 
-#### <a name="propdbpoolmin"></a> 3.2.20 `oracledb.poolMin`
+#### <a name="propdbpoolmin"></a> 3.2.19 `oracledb.poolMin`
 
 [View latest documentation](https://node-oracledb.readthedocs.io/en/latest/api_manual/oracledb.html#oracledb.poolMin)
 
-#### <a name="propdbpoolpinginterval"></a> 3.2.21 `oracledb.poolPingInterval`
+#### <a name="propdbpoolpinginterval"></a> 3.2.20 `oracledb.poolPingInterval`
 
 [View latest documentation](https://node-oracledb.readthedocs.io/en/latest/api_manual/oracledb.html#oracledb.poolPingInterval)
 
-#### <a name="propdbpooltimeout"></a> 3.2.22 `oracledb.poolTimeout`
+#### <a name="propdbpooltimeout"></a> 3.2.21 `oracledb.poolTimeout`
 
 [View latest documentation](https://node-oracledb.readthedocs.io/en/latest/api_manual/oracledb.html#oracledb.poolTimeout)
 
-#### <a name="propdbprefetchrows"></a> 3.2.23 `oracledb.prefetchRows`
+#### <a name="propdbprefetchrows"></a> 3.2.22 `oracledb.prefetchRows`
 
 [View latest documentation](https://node-oracledb.readthedocs.io/en/latest/api_manual/oracledb.html#oracledb.prefetchRows)
 
-#### <a name="propdbpromise"></a> 3.2.24 `oracledb.Promise`
+#### <a name="propdbpromise"></a> 3.2.23 `oracledb.Promise`
 
 [View latest documentation](https://node-oracledb.readthedocs.io/en/latest/api_manual/oracledb.html#oracledb.Promise)
 
-#### <a name="propdbqueuemax"></a> 3.2.25 `oracledb.queueMax`
+#### <a name="propdbqueuemax"></a> 3.2.24 `oracledb.queueMax`
 
 [View latest documentation](https://node-oracledb.readthedocs.io/en/latest/api_manual/oracledb.html#oracledb.queueMax)
 
-#### <a name="propdbqueuerequests"></a> 3.2.26 `oracledb.queueRequests`
+#### <a name="propdbqueuerequests"></a> 3.2.25 `oracledb.queueRequests`
 
 [View latest documentation](https://node-oracledb.readthedocs.io/en/latest/api_manual/oracledb.html#oracledb.queueRequests)
 
-#### <a name="propdbqueuetimeout"></a> 3.2.27 `oracledb.queueTimeout`
+#### <a name="propdbqueuetimeout"></a> 3.2.26 `oracledb.queueTimeout`
 
 [View latest documentation](https://node-oracledb.readthedocs.io/en/latest/api_manual/oracledb.html#oracledb.queueTimeout)
 
-#### <a name="propdbstmtcachesize"></a> 3.2.28 `oracledb.stmtCacheSize`
+#### <a name="propdbstmtcachesize"></a> 3.2.27 `oracledb.stmtCacheSize`
 
 [View latest documentation](https://node-oracledb.readthedocs.io/en/latest/api_manual/oracledb.html#oracledb.stmtCacheSize)
 
-#### <a name="propdbversion"></a> 3.2.29 `oracledb.version`
+#### <a name="propdbversion"></a> 3.2.28 `oracledb.version`
 
 [View latest documentation](https://node-oracledb.readthedocs.io/en/latest/api_manual/oracledb.html#oracledb.version)
 
-#### <a name="propdbversionstring"></a> 3.2.30 `oracledb.versionString`
+#### <a name="propdbversionstring"></a> 3.2.29 `oracledb.versionString`
 
 [View latest documentation](https://node-oracledb.readthedocs.io/en/latest/api_manual/oracledb.html#oracledb.versionString)
 
-#### <a name="propdbversionsuffix"></a> 3.2.31 `oracledb.versionSuffix`
+#### <a name="propdbversionsuffix"></a> 3.2.30 `oracledb.versionSuffix`
 
 [View latest documentation](https://node-oracledb.readthedocs.io/en/latest/api_manual/oracledb.html#oracledb.versionSuffix)
 
