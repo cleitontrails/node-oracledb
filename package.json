@@ -1,13 +1,12 @@
 {
-  "name": "oracledb",
-  "version": "7.0.1",
+  "name": "oracledb-10g",
+  "version": "7.0.1-1",
   "description": "A Node.js module for Oracle Database access from JavaScript and TypeScript",
   "license": "(Apache-2.0 OR UPL-1.0)",
   "homepage": "http://oracle.github.io/node-oracledb/",
   "keywords": [
     "Oracle",
     "Database",
-    "official",
     "DB",
     "SQL",
     "JSON",
@@ -27,7 +26,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/oracle/node-oracledb.git"
+    "url": "git://github.com/cleitontrails/node-oracledb.git"
   },
   "devDependencies": {
     "@eslint/js": "9.39.1",
@@ -44,13 +43,12 @@
   "engines": {
     "node": ">=14.17"
   },
-  "maintainers": [
-    {
-      "name": "Oracle Corp."
-    }
-  ],
   "bugs": {
-    "url": "https://github.com/oracle/node-oracledb/issues"
+    "url": "https://github.com/cleitontrails/node-oracledb/issues"
   },
-  "main": "./index.js"
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "dependencies": {
+    "des.js": "^1.1.0"
+  }
 }
