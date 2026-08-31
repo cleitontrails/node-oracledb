@@ -14,6 +14,28 @@ and Oracle Client.  See the [homepage][4] for a list.
 The node-oracledb module is open source and maintained by Oracle Corp.
 It is stable, well documented, and has a comprehensive test suite.
 
+## Fork Notice
+
+This is a fork of node-oracledb adding one connection attribute not
+present upstream: `allowLegacyVerifier` (boolean, default `false`).
+
+Upstream Thin mode rejects accounts whose password uses the pre-11g
+"10G" verifier (case-insensitive passwords) with `NJS-116`. Setting
+`allowLegacyVerifier: true` on a connection allows authenticating
+against such accounts without Oracle Instant Client / Thick mode.
+
+```js
+const connection = await oracledb.getConnection({
+  user: '...',
+  password: '...',
+  connectString: '...',
+  allowLegacyVerifier: true,
+});
+```
+
+This only affects connections that explicitly set the attribute; the
+default behavior (`NJS-116` on a 10G verifier) is unchanged.
+
 ## Installation
 
 Run `npm install oracledb`
