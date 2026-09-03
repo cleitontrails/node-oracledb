@@ -1,4 +1,4 @@
-# node-oracledb version 7.0.1 <img src="https://img.shields.io/npm/v/oracledb.svg" alt="oracledb"/>  <img src="https://img.shields.io/npm/dm/oracledb.svg" alt="oracledb"/>
+# oracledb-10g version 7.0.1-2 <img src="https://img.shields.io/npm/v/oracledb-10g.svg" alt="oracledb-10g"/>
 
 The node-oracledb add-on for Node.js powers high performance Oracle Database
 applications.  Applications can be written in TypeScript, or directly in
@@ -36,9 +36,21 @@ const connection = await oracledb.getConnection({
 This only affects connections that explicitly set the attribute; the
 default behavior (`NJS-116` on a 10G verifier) is unchanged.
 
+### Thin mode only
+
+This fork is published as a Thin-mode-only package. The C sources and
+`binding.gyp` are not included in the npm tarball, so installing it never
+invokes `node-gyp` and requires no compiler, no Oracle Instant Client, and
+no ODPI-C sources.
+
+As a consequence, Thick mode is not available: calling
+`oracledb.initOracleClient()` will fail. Applications migrating from the
+upstream `oracledb` package must remove that call. If you need Thick mode,
+use the upstream [`oracledb`][14] package instead.
+
 ## Installation
 
-Run `npm install oracledb`
+Run `npm install oracledb-10g`
 
 See [Getting Started with Node-oracledb][1] and [Quick Start Node-oracledb Installation][2].
 
@@ -58,21 +70,16 @@ See [Getting Started with Node-oracledb][1] and [Quick Start Node-oracledb Insta
   **Thin mode**: By default node-oracledb (from version 6.0 onwards) runs in a
   'Thin' mode which connects directly to Oracle Database.
 
-  **Thick mode**: Some advanced Oracle Database functionality is currently only
-  available when optional Oracle Client libraries are loaded by
-  node-oracledb. Libraries are available in the free [Oracle Instant
-  Client][15] packages. Node-oracledb can use Oracle Client libraries version
-  19 and later.
+  **Thick mode**: Not supported by this fork. See "Thin mode only" above.
 
 - Oracle Database
 
   **Thin mode**: Oracle Database 12.1 (or later) is required.
 
-  **Thick mode**: Oracle Database 11.2 (or later) is required, depending on the
-  Oracle Client library version.  Oracle Database's standard client-server
-  version interoperability allows connection to both older and newer
-  databases. For example, when node-oracledb uses Oracle Client 19c libraries,
-  then it can connect to Oracle Database 11.2 or later.
+  Databases older than 12.1 are reachable in Thin mode only when the account
+  uses a verifier this fork supports; see "Fork Notice" above.
+
+  **Thick mode**: Not supported by this fork.
 
 ## Documentation
 
