@@ -36,6 +36,25 @@ const connection = await oracledb.getConnection({
 This only affects connections that explicitly set the attribute; the
 default behavior (`NJS-116` on a 10G verifier) is unchanged.
 
+### Native Network Encryption
+
+Upstream Thin mode advertises no encryption or data integrity algorithms
+during Advanced Networking Option negotiation, so a server configured with
+`SQLNET.ENCRYPTION_SERVER = REQUIRED` (common on Oracle Cloud) refuses the
+connection with `NJS-533` / `ORA-12660`. This fork negotiates them.
+
+Supported algorithms: AES256, AES192 and AES128 for encryption; SHA256,
+SHA384 and SHA512 for crypto-checksumming.
+
+No configuration is needed and nothing changes for servers that do not ask
+for encryption. The client offers "none" alongside the algorithms above,
+which is the `ACCEPTED` level: a connection is encrypted only when the
+server requests or requires it.
+
+The legacy algorithms the Oracle client also offers (RC4, DES, 3DES, MD5,
+SHA1) are not implemented. A server that requires one of them is refused
+with `NJS-532`.
+
 ### Thin mode only
 
 This fork is published as a Thin-mode-only package. The C sources and
